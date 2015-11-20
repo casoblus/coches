@@ -1,13 +1,14 @@
 class coche 
 {
 	private String matricula, marca, modelo;
-	private float km, combustible;
+	private float km, combustible, consumer;
 	
-	public void ALTA( String mat, String mar, String mod )
+	public void ALTA( String mat, String mar, String mod, float cons )
 	{
 		matricula = mat;
 		marca = mar;
 		modelo = mod;
+		consumer = cons;
 	}
 
 	public void VER_DATOS()
@@ -31,7 +32,7 @@ class coche
 
 	public void CIRCULAR( float dist )
 	{
-		float consumo = 0.7f * dist;
+		float consumo =  consumer * dist;
 		if( consumo < combustible )
 		{
 			combustible -= consumo;

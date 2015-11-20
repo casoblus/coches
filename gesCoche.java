@@ -32,7 +32,10 @@ class gesCoche
 					System.out.println( "Modelo." );
 					//gbg = sc.nextLine();
 					String _mod = sc.nextLine();
-					vehiculo.ALTA( _mat, _mar, _mod );
+					System.out.println( "Consumo." );
+					//gbg = sc.nextLine();
+					float _cons = sc.nextFloat();
+					vehiculo.ALTA( _mat, _mar, _mod, _cons );
 					break;
 				case 2:
 					System.out.println( "DATOS DEL VEHICULO" );
